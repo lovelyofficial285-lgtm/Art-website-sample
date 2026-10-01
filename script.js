@@ -18,7 +18,7 @@
     });
   }
   function img(id, w) { // Pexels URL builder (w = width)
-    return "https://images.pexels.com/photos/" + id + "/pexels-photo-" + id +
+    return "/" + id + "/pexels-photo-" + id +
            ".jpeg?auto=compress&cs=tinysrgb&fit=crop&h=" + Math.round(w * 0.82) + "&w=" + w;
   }
 
