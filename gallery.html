@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       KALA HAAT · Gallery — Artworks & Artisan Life
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Kala Haat — Handmade Indian Art in Real Homes & Workshops</title>
+  <meta name="description" content="A visual tour through Kala Haat's world — terracotta markets, hand knotted rugs, folk paintings, artisan workshops and customer homes styled with authentic Indian craft.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER (shared)
+     ============================================================ -->
+<header class="site-header">
+  <div class="hdr-top">
+    <div class="container">
+      <div class="row align-items-center g-2">
+        <div class="col-auto order-1">
+          <a class="brand-mark" href="index.html" aria-label="Kala Haat — home">
+            <span class="bm-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c1.5 2 1.5 4.5 0 6.5-1.5-2-1.5-4.5 0-6.5Z"/><path d="M4.6 8.4c2.4.4 4 2 4.7 4.4C6 12.4 4.4 10.8 4.6 8.4Z"/><path d="M19.4 8.4c.2 2.4-1.4 4-4.7 4.4.7-2.4 2.3-4 4.7-4.4Z"/><path d="M3 14c3 5 15 5 18 0-3 1-6 1.5-9 1.5S6 15 3 14Z"/></svg>
+            </span>
+            Kala&nbsp;Haat
+            <span class="hindi d-none d-sm-inline" style="font-size:.82rem;color:var(--gold);letter-spacing:.05em">भारतीय हस्तशिल्प</span>
+          </a>
+        </div>
+        <div class="col-12 col-lg order-3 order-lg-2">
+          <form class="hdr-search" id="searchForm" role="search" aria-label="Search products">
+            <label class="visually-hidden" for="hdrSearchInput">Search handmade artworks</label>
+            <input id="hdrSearchInput" name="search" type="search" placeholder='Search "Madhubani wall hanging", "terracotta vase", "Warli rug"…'>
+            <button type="submit" aria-label="Search">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            </button>
+          </form>
+        </div>
+        <div class="col-auto order-2 order-lg-3 ms-auto">
+          <div class="hdr-tools">
+            <label class="visually-hidden" for="currencySelect">Currency</label>
+            <select class="currency-sel" id="currencySelect" aria-label="Select currency">
+              <option value="INR">₹ INR</option>
+              <option value="USD">$ USD</option>
+              <option value="AED">د.إ AED</option>
+            </select>
+            <a href="#" class="hdr-signin d-none d-md-inline">Sign&nbsp;In</a>
+            <a href="cart.html" class="hdr-cart" aria-label="Go to cart">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6 7h12l1 14H5L6 7Z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg>
+              Cart&nbsp;(<span class="cart-count">0</span>)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav" aria-label="Primary">
+    <div class="container d-flex justify-content-between align-items-center">
+      <ul class="nav d-none d-lg-flex">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown" role="button" aria-expanded="false">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="services.html?category=bamboo">Bamboo Art</a></li>
+            <li><a class="dropdown-item" href="services.html?category=rugs">Rugs</a></li>
+            <li><a class="dropdown-item" href="services.html?category=wallhangings">Wall Hangings</a></li>
+            <li><a class="dropdown-item" href="services.html?category=pottery">Pottery / Clay</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="services.html">View All</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="services.html#advisory">Art Advisory</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown" role="button" aria-expanded="false">Discover Indian Art</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="services.html?artform=madhubani">Madhubani</a></li>
+            <li><a class="dropdown-item" href="services.html?artform=warli">Warli</a></li>
+            <li><a class="dropdown-item" href="services.html?artform=pattachitra">Pattachitra</a></li>
+            <li><a class="dropdown-item" href="services.html?artform=gond">Gond</a></li>
+            <li><a class="dropdown-item" href="services.html?artform=kalamkari">Kalamkari</a></li>
+            <li><a class="dropdown-item" href="services.html?artform=pichwai">Pichwai</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+      </ul>
+      <button class="navbar-toggler nav-toggle d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        Menu
+      </button>
+      <span class="d-lg-none text-white-50" style="font-size:12px">Handmade in India</span>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-start offcanvas-nav" tabindex="-1" id="mobileNav" aria-label="Menu">
+    <div class="offcanvas-header">
+      <span class="oc-title">Kala Haat</span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+      <ul class="oc-list">
+        <li><a class="oc-link" href="services.html">Shop All</a></li>
+        <li>
+          <button class="oc-group-btn" type="button" data-bs-toggle="collapse" data-bs-target="#ocShop" aria-expanded="false" aria-controls="ocShop">
+            Shop by Category
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="collapse" id="ocShop">
+            <div class="oc-sub">
+              <a href="services.html?category=bamboo">Bamboo Art</a>
+              <a href="services.html?category=rugs">Rugs</a>
+              <a href="services.html?category=wallhangings">Wall Hangings</a>
+              <a href="services.html?category=pottery">Pottery / Clay</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="oc-group-btn" type="button" data-bs-toggle="collapse" data-bs-target="#ocArts" aria-expanded="false" aria-controls="ocArts">
+            Discover Indian Art
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="collapse" id="ocArts">
+            <div class="oc-sub">
+              <a href="services.html?artform=madhubani">Madhubani</a>
+              <a href="services.html?artform=warli">Warli</a>
+              <a href="services.html?artform=pattachitra">Pattachitra</a>
+              <a href="services.html?artform=gond">Gond</a>
+              <a href="services.html?artform=kalamkari">Kalamkari</a>
+              <a href="services.html?artform=pichwai">Pichwai</a>
+            </div>
+          </div>
+        </li>
+        <li><a class="oc-link" href="services.html#advisory">Art Advisory</a></li>
+        <li><a class="oc-link" href="gallery.html">Gallery</a></li>
+        <li><a class="oc-link" href="about.html">About Us</a></li>
+        <li><a class="oc-link" href="cart.html">Cart (<span class="cart-count">0</span>)</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="pattern-mandala" style="position:absolute;inset:0;opacity:.55" aria-hidden="true"></div>
+  <div class="container position-relative">
+    <p class="crumb mb-1"><a href="index.html">Home</a> / Gallery</p>
+    <h1>The Gallery</h1>
+    <p>Artworks, artisan workshops and the homes they end up in. Hover a photo — or tap — to see its story.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY GRID (rendered by JS · lazy loaded · lightbox)
+     ============================================================ -->
+<section class="section container" aria-label="Artwork gallery">
+  <div class="gal-grid reveal" id="galleryGrid"></div>
+
+  <div class="text-center mt-5 reveal">
+    <p style="color:var(--muted);font-size:14px">Like something you see? Bring it home.</p>
+    <a href="services.html" class="btn-rh">Shop the Collection</a>
+  </div>
+</section>
+</main>
+
+<!-- ============================================================
+     FOOTER (shared)
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="pattern-mandala" aria-hidden="true"></div>
+  <div class="f-inner">
+    <div class="container pt-5">
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <p class="f-brand mb-1">Kala Haat</p>
+          <p class="hindi" style="color:var(--gold)">भारतीय हस्तशिल्प</p>
+          <p class="f-note mb-3">Authentic handmade art &amp; craft from artisan families across India. Each piece carries a story worth telling.</p>
+          <div class="f-social">
+            <a href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Pinterest"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="m8.5 19 .8-4.5M9 11.5c0-2.5 1.5-4.5 3.7-4.5 2 0 3.3 1.2 3.3 3.2 0 2.4-1.4 3.8-3 3.8-.9 0-1.5-.6-1.3-1.5"/></svg></a>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.26-.47-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35ZM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.9c0 5.44-4.45 9.87-9.89 9.87Zm8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.94L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.16-3.47-8.4Z"/></svg></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4>Shop</h4>
+          <a class="d-block" href="services.html?category=bamboo">Bamboo Art</a>
+          <a class="d-block" href="services.html?category=rugs">Rugs</a>
+          <a class="d-block" href="services.html?category=wallhangings">Wall Hangings</a>
+          <a class="d-block" href="services.html?category=pottery">Pottery / Clay</a>
+          <a class="d-block" href="services.html#bundles">Big Art Sets</a>
+          <a class="d-block" href="services.html#advisory">Art Advisory</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4>Discover &amp; Company</h4>
+          <a class="d-block" href="services.html?artform=madhubani">Madhubani</a>
+          <a class="d-block" href="services.html?artform=warli">Warli</a>
+          <a class="d-block" href="services.html?artform=pattachitra">Pattachitra</a>
+          <a class="d-block" href="services.html?artform=gond">Gond</a>
+          <a class="d-block" href="services.html?artform=kalamkari">Kalamkari</a>
+          <a class="d-block" href="services.html?artform=pichwai">Pichwai</a>
+          <a class="d-block" href="about.html">About Us</a>
+          <a class="d-block" href="gallery.html">Gallery</a>
+        </div>
+        <div class="col-lg-3">
+          <h4>Stay in the loop</h4>
+          <p class="f-note">New artisan drops, festival collections and stories — once a month.</p>
+          <form class="f-news f-news-form" novalidate>
+            <label class="visually-hidden" for="newsEmail">Email address</label>
+            <input id="newsEmail" type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="f-note mt-3 mb-0">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="vertical-align:-2px" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Artisan collective · New Delhi, India
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="ship-band mt-4">
+        <div class="row">
+          <div class="col-md-4"><div class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+            Shipping across India · Free above ₹2,999</div></div>
+          <div class="col-md-4"><div class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            Secure payment · Easy 7-day returns</div></div>
+          <div class="col-md-4"><div class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
+            100% handmade · Fair artisan pay</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-3 pb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2 pt-3" style="border-top:1px solid rgba(255,255,255,.12)">
+        <p class="f-note mb-0">© 2025 Kala Haat. Crafted with respect for Indian art traditions.</p>
+        <p class="f-note mb-0">Handmade in India 🇮🇳</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
